@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher_round"/>
+
+    <TextView
+        android:id="@+id/user_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@id/user_profile_pic"
+        android:layout_toRightOf="@id/user_profile_pic"
+        android:textSize="20sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/status_circle_on"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/user_profile_pic"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="-15dp"
+        android:visibility="gone"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_width="15dp"
+        app:civ_border_color="#7CFC00"
+        android:layout_toEndOf="@id/user_profile_pic"
+        android:layout_toRightOf="@id/user_profile_pic"
+        android:layout_marginStart="-15dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/status_circle_off"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/user_profile_pic"
+        android:layout_marginTop="-15dp"
+        android:layout_marginLeft="-15dp"
+        android:visibility="gone"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_width="15dp"
+        app:civ_border_color="@android:color/darker_gray"
+        android:layout_toEndOf="@id/user_profile_pic"
+        android:layout_toRightOf="@id/user_profile_pic"
+        android:layout_marginStart="-15dp" />
+
+    <TextView
+        android:id="@+id/last_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_textview"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/user_profile_pic"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/user_profile_pic" />
+
+
+
+
+</RelativeLayout>
